@@ -20,8 +20,6 @@ class CsvImporter{
     private $directory = 'file_upload/server/php/files/';
     
     function __construct($delimiter=','){
-        //BetaalschemaOverzicht_2015-01-22_20.22.56
-        //$this->filename = "file_upload/server/php/files/".$filename;
         $this->filename = $this->directory . $this->getNewestCsv();
         $this->delimiter = $delimiter;
         return;
