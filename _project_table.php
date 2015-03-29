@@ -4,6 +4,9 @@ include "CsvImporter.php";
 $importer = new CsvImporter(';'); 
 $data = $importer->csv_to_array(); 
 ?>
+ <?php if($data == '' || $data == null ){ ?>
+     <div class="alert alert-danger" role="alert">Geen Geldvoorelkaar CSV gevonden. Controleer of het bestand correct is geupload.</div>
+ <?php } ?>
  <table class="table table-hover table-curved project_table">
     <thead>
         <tr class="info">

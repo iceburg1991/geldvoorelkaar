@@ -44,18 +44,22 @@ class CsvImporter{
                 unset($files[$key]);
             }
             else{ 
-                $newKey = str_replace(".csv","",$value); 
-                $newKey = explode("_",$newKey);
-                $date = $newKey[1];
-                $time = str_replace(".",":",$newKey[2]);
-                if($date != null && $time != null){
-                    $dateTime = new DateTime($date . " " . $time);
-                    $dateTime->format("Y-m-d H:i:s");
-                    $dateTime = $dateTime->getTimestamp();
-                    $files[$value] = $dateTime;
+                $newKey = str_replace(".csv","",$value);
+                if(strpos($newKey, '_') !== false) {
+                    $newKey = explode("_", $newKey);
+                    $date = $newKey[1];
+                    $time = str_replace(".", ":", $newKey[2]);
+                    if ($date != null && $time != null) {
+                        $dateTime = new DateTime($date . " " . $time);
+                        $dateTime->format("Y-m-d H:i:s");
+                        $dateTime = $dateTime->getTimestamp();
+                        $files[$value] = $dateTime;
+                    }
+                    unset($files[$key]);
                 }
-                unset($files[$key]);
-                //Create array met key[filename] en value = timestamp
+                else{
+                    //File not valid CSV Geldvoorelkaar format
+                }
             }
         }
         return $files;
