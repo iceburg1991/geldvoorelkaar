@@ -16,9 +16,9 @@ Screenshot van de tabel met de Geldvoorelkaar project gegevens:
 2. Pak het gedownloade bestand uit met  <pre>unzip v1.1.zip</pre>
 
 ##Waarom dit project?##
-Ik wil graag op maandelijkse basis weten waar ik aan toe ben. Ik wil het gevoel hebben dat ik een volledig overzicht heb van de projecten waar ik geinvesteerd heb, maar dit gevoel heb ik momenteel niet. Een concreet voorbeeld is dat ik wil weten wat ik maandelijks van mijn geïnvesteerde Geldvoorelkaar projecten terugkrijg. In de huidige interface die Geldvoorelkaar biedt is dit niet aanwezig. Daarnaast is de weergave van de project informatie niet prettig en stoor ik mij aan het moeten scrollen om een gedeelte van de informatie te kunnen zien. 
+Geldvoorelkaar is een interessant financieel platform waar ik gebruik van maak. Wat ik belangrijk vind is dat ik op maandelijkse basis weet hoe ik ervoor sta. Ik wil het gevoel hebben dat ik een volledig overzicht heb van de projecten waar ik geinvesteerd heb, maar dit gevoel heb ik momenteel niet. Een concreet voorbeeld is dat ik wil weten wat ik maandelijks van mijn geïnvesteerde Geldvoorelkaar projecten terugkrijg. Het huidige systeem van Geldvoorelkaar biedt dit niet. Daarnaast vindt ik de weergave van de project informatie niet prettig en stoor ik mij aan het moeten scrollen om een gedeelte van de informatie te kunnen zien. 
 
-Met alleen klagen over slechte systemen schieten we niets op, dus ik dacht laat ik zelf een overzicht maken waarbij ik de informatie te zien krijg die ik wil zien. 
+Om de gebruikersvriendelijkheid van het systeem te verhogen, dacht laat ik zelf een overzicht maken waarbij ik de informatie te zien krijg die ik wil zien. 
 
 ##Huidige uitdagingen##
 Ik ben een web developer en kan eenvoudig dit GitHub project werkend krijgen op mijn server of op mijn laptop. Dit is echter voor de gemiddelde Nederlander een grotere uitdaging. Hoe zorg ik ervoor dat deze web app eenvoudig door iedereen gebruikt kan worden?......
