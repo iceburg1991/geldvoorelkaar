@@ -1,0 +1,15 @@
+{
+  "name": "iceburg/geldvoorelkaar",
+  "description": "Geldvoorelkaar overzicht met Google material design",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "IJsbrand van Prattenburg",
+      "email": "ijsbrand2004@gmail.com"
+    }
+  ],
+  "require": {
+   "twig/twig": "~1.0"
+  }
+}
