@@ -1,4 +1,7 @@
-<?php if(!empty($_GET["install"])){
+<?php
+include '../user_agent.php';
+
+if(!empty($_GET["install"])){
     startSetup();
 }
 function startSetup() {
@@ -17,7 +20,7 @@ function startSetup() {
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="blue">
                 <div class="container">
                     <div class="nav-wrapper">
                         <a class="brand-logo">Installatie Geldvoorelkaar</a>
@@ -27,7 +30,7 @@ function startSetup() {
         </header>
         <main>
             <div class="container">
-                <h4>Te installeren:</h4>
+                <h5>Te installeren:</h5>
                 <p><?php $output = shell_exec('cd ../ & php composer.phar show -s');
                         $required_packages = trim(str_replace('requires','',strstr($output,'requires')));
                         $required_packages = explode("\n", $required_packages);
@@ -36,6 +39,12 @@ function startSetup() {
                     }
                     ?>
                  </p>
+                <div class="divider"></div>
+                <h5>Informatie over jouw systeem:</h5>
+                <p>
+                    <strong>Besturingssysteem:</strong> <?php echo getOS(); ?><br />
+                    <strong>Browser:</strong> <?php echo getBrowser(); ?>
+                </p>
                 <a class="waves-effect waves-light btn" href="?install=true"><i class="mdi-content-send right"></i> Start installatie  </a>
             </div>
             <!--Import jQuery before materialize.js-->

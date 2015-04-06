@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+  <html>
+    {% include '_header.twig'  %}
+    <body>
+        <header>
+            <div id="top-nav">{% include '_topbar.twig' with {'title' : 'Dashboard'}   %}</div>
+        </header>
+        <main>
+            <div class="row">
+                {% include '_project_view.twig' %}
+            </div>
+        </main>
+        {% include '_footer.twig' %}
+    </body>
+</html>
