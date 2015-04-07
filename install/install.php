@@ -40,8 +40,7 @@ function isWindows(){
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.0/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="/geldvoorelkaar/css/materialize.min.css">
         <link href="/geldvoorelkaar/css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -79,7 +78,7 @@ function isWindows(){
                 <a class="waves-effect waves-light btn" href="?install=true"><i class="mdi-content-send right"></i> Start installatie  </a>
             </div>
             <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.0/js/materialize.min.js"></script>
+            <script src="/geldvoorelkaar/js/materialize.min.js"></script>
         </main>
         <footer class="page-footer blue darken-2">
             <div class="footer-copyright">
