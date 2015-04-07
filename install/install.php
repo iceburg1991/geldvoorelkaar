@@ -35,6 +35,16 @@ function isWindows(){
     }
     return $isWindows;
 }
+
+function isWindowsServer(){
+    $serverOs = false;
+    if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+        $serverOs = true;
+    } else {
+        $serverOs = false;
+    }
+    return $serverOs;
+}
 ?>
 
 <!doctype html>
@@ -58,7 +68,7 @@ function isWindows(){
                 <h5>Te installeren:</h5>
                 <p><?php
                     $andSign = ";";
-                    if(isWindows()){
+                    if(isWindowsServer()){
                         $andSign = "&";
                     }
                     $output = shell_exec('cd ../ '. $andSign .' php composer.phar show -s');
@@ -73,7 +83,8 @@ function isWindows(){
                 <h5>Informatie over jouw systeem:</h5>
                 <p>
                     <strong>Besturingssysteem:</strong> <?php echo getOS(); ?><br />
-                    <strong>Browser:</strong> <?php echo getBrowser(); ?>
+                    <strong>Browser:</strong> <?php echo getBrowser(); ?><br />
+                    <strong>Server OS:</strong> <?php echo strtoupper(substr(PHP_OS, 0, 3)); ?>
                 </p>
                 <a class="waves-effect waves-light btn" href="?install=true"><i class="mdi-content-send right"></i> Start installatie  </a>
             </div>
