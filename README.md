@@ -12,7 +12,7 @@ Apache om PHP code te kunnen uitvoeren.
 1. Download de code van dit project op de server. Dit kan via de terminal met <pre>wget https://github.com/iceburg1991/geldvoorelkaar/archive/v1.1.zip</pre>
 2. Pak het gedownloade bestand uit met  <pre>unzip v1.1.zip</pre>
 3. Installeer de benodigde onderdelen met Composer <pre>php composer.phar install</pre>
-4. Open de webpagina op http://<jouw domein>/geldvoorelkaar/
+4. Open de webpagina op http://jouw domein.nl/geldvoorelkaar/
 
 ##Waarom dit project?##
 Geldvoorelkaar is een interessant financieel platform waar ik gebruik van maak. Wat ik belangrijk vind is dat ik op maandelijkse basis weet hoe ik ervoor sta. Ik wil het gevoel hebben dat ik een volledig overzicht heb van de projecten waar ik geinvesteerd heb, maar dit gevoel heb ik momenteel niet. Een concreet voorbeeld is dat ik wil weten wat ik maandelijks van mijn geïnvesteerde Geldvoorelkaar projecten terugkrijg. Het huidige systeem van Geldvoorelkaar biedt dit niet. Daarnaast vindt ik de weergave van de project informatie niet prettig en stoor ik mij aan het moeten scrollen om een gedeelte van de informatie te kunnen zien. 
