@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    {% include '_header.twig' %}
+    <body>
+        <header>
+            <div id="top-nav">{% include '_topbar.twig' with {'title' : 'Projecten'} %}</div>
+        </header>
+        <main class="grey lighten-3">
+            <div class="container">
+                {% include 'partial/_project_view.twig' %}
+            </div>
+            {% include '_body_end.html' %}
+        </main>
+        {% include '_footer.twig' %}
+    </body>
+</html>
