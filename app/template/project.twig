@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    {% include '_header.twig' %}
+    <body>
+        <header>
+            <div id="top-nav">{% include '_topbar.twig' with {'title' : 'Project 1'} %}</div>
+        </header>
+        <main class="grey lighten-3">
+            <div class="container">
+                <h1>project</h1>
+                <ul>
+                    <li>totale investering</li>
+                    <li>looptijd</li>
+                    <li>totaal rendement (bedrag)</li>
+                    <li>rendement per jaar (percentage)</li>
+
+                    <li>jaarlijks rendement</li>
+                    <li>jaarlijks aflossing</li>
+
+                    <li>maandelijks totaal bedrag</li>
+                    <li>maandelijks rendement bedrag</li>
+                    <li>maandelijks aflossing bedrag</li>
+                </ul>
+            </div>
+            {% include '_body_end.html' %}
+        </main>
+        {% include '_footer.twig' %}
+    </body>
+</html>
