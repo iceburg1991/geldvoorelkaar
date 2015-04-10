@@ -22,15 +22,14 @@ class Twig{
     public function init(){
         Twig_Autoloader::register();
 
-        $this->loader = new Twig_Loader_Filesystem(array(
-            dirname(__DIR__),
-            dirname(__DIR__).'\app\template',
-        ));
+        $this->loader = new Twig_Loader_Filesystem(dirname(__DIR__));
+		$this->loader->addPath(dirname(__DIR__).'/app/template');
 
         $this->twig = new Twig_Environment($this->loader, array(
             'cache' => dirname(__DIR__) . '/cache',
             'debug' => true,
         ));
+		return;
     }
 
     function getLoader(){
