@@ -1,11 +1,21 @@
-<ul class="collection with-header">
+<ul class="collection">
     <li class="collection-item"><div>Project 1<a href="#!" class="secondary-content"><i class="mdi-content-send"></i></a></div></li>
     <li class="collection-item"><div>Project 2<a href="#!" class="secondary-content"><i class="mdi-content-send"></i></a></div></li>
-    <li class="collection-item"><div>Project 3<a href="#!" class="secondary-content"><i class="mdi-content-send"></i></a></div></li>
-    <li class="collection-item" onclick="window.open('project.php','_self');" style="cursor:pointer;"><div>Project 4<a href="project.php" class="secondary-content"><i class="mdi-content-send"></i></a></div></li>
+    <li class="collection-item" onclick="window.open('project.php','_self');">
+        <span class="title" style="font-size:16px;">Project naam 1</span><br/>
+        <span class="grey-text" style="font-size:14px;">21 Jan, 2013</span>
+    </li>
+    <li class="collection-item" onclick="window.open('project.php','_self');" >
+        <div>Project 4
+            <a href="project.php" class="secondary-content">
+                <i class="mdi-content-send"></i>
+            </a>
+        </div>
+    </li>
 </ul>
-<script>
-    function openProject(){
-
-    }
-</script>
+<ul class="collection">
+    <a href="/geldvoorelkaar/app/template/project.php" class="collection-item">
+        <span class="title" style="color:rgba(0,0,0,0.87);font-size:16px;">Project naam 1</span><br/>
+        <span class="grey-text" style="font-size:14px;">21 Jan, 2013</span>
+    </a>
+</ul>
