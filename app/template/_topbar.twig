@@ -1,8 +1,20 @@
 <div class="navbar-fixed">
+    {% if settings %}
+        <ul id="actions" class="dropdown-content">
+            {% for setting in settings %}
+                <li><a href="#!">{{ setting }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
     <nav class="blue">
         <div class="nav-wrapper">
             <a href="/geldvoorelkaar/" class="brand-logo center">{{ title }} </a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            {% if settings %}
+                <ul class="right">
+                    <li><a href="#!" class="dropdown-button" data-activates="actions"><i class="mdi-navigation-more-vert"></i></a></li>
+                </ul>
+            {% endif %}
             <ul class="right hide-on-med-and-down">
                 <li><a href="/geldvoorelkaar/app/template/projects.php">Projecten</a></li>
                 <li><a href="/geldvoorelkaar/app/template/settings.php">Instellingen</a></li>
