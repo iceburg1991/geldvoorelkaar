@@ -16,7 +16,13 @@ footer.page-footer {
     margin-top: 11px;
     border-radius: 2px;
 }
-
+.projects-list .title {
+    color:rgba(0,0,0,0.87);
+    font-size:16px;
+}
+.projects-list .sub-title {
+    font-size:14px;
+}
 
 
 
