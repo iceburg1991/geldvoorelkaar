@@ -1,4 +1,13 @@
 <ul class="collection projects-list">
+    {% for project in projects %}
+        <a href="/geldvoorelkaar/app/template/project.php" class="collection-item">
+            <span class="title" >{{ project.name }}</span><br/>
+            <span class="sub-title grey-text" >{{ project.startDate|date("d M/Y", "Europe/London") }}</span>
+        </a>
+    {% endfor %}
+</ul>
+
+<ul class="collection projects-list">
     <a href="/geldvoorelkaar/app/template/project.php" class="collection-item">
         <span class="title" >Bakkerswinkel</span><br/>
         <span class="sub-title grey-text" >01 Jan, 2013</span>

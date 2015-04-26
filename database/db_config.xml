@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<database>
+    <host>localhost</host>
+    <user_name>root</user_name>
+    <user_password></user_password>
+    <database_name>geldvoorelkaar</database_name>
+</database>
