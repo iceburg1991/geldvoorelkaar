@@ -14,6 +14,10 @@ Apache om PHP code te kunnen uitvoeren.
 3. Installeer de benodigde onderdelen met Composer <pre>php composer.phar install</pre>
 4. Open de webpagina op http://jouw domein.nl/geldvoorelkaar/
 
+##Troubeshooting ##
+Mocht je een error krijgen dat de Twig extension de 'intl' nodig heeft, dan komt dat omdat jouw PHP die draait geen Intl extensie geactiveerd heeft. 
+Standaard zit dit in PHP5, dus je hoeft het alleen maar te activeren door een simele tag weg te halen in de php.ini. Lees hier meer erover:
+[Stackoverflow oplossing](http://stackoverflow.com/questions/25948853/how-to-install-the-intl-extension-for-twig)
 ##Waarom dit project?##
 Geldvoorelkaar is een interessant financieel platform waar ik gebruik van maak. Wat ik belangrijk vind is dat ik op maandelijkse basis weet hoe ik ervoor sta. Ik wil het gevoel hebben dat ik een volledig overzicht heb van de projecten waar ik geinvesteerd heb, maar dit gevoel heb ik momenteel niet. Een concreet voorbeeld is dat ik wil weten wat ik maandelijks van mijn geïnvesteerde Geldvoorelkaar projecten terugkrijg. Het huidige systeem van Geldvoorelkaar biedt dit niet. Daarnaast vindt ik de weergave van de project informatie niet prettig en stoor ik mij aan het moeten scrollen om een gedeelte van de informatie te kunnen zien. 
 

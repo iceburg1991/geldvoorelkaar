@@ -2,7 +2,7 @@
     {% for project in projects %}
         <a href="/geldvoorelkaar/app/template/project.php" class="collection-item">
             <span class="title" >{{ project.name }}</span><br/>
-            <span class="sub-title grey-text" >{{ project.startDate|date("d M/Y", "Europe/London") }}</span>
+            <span class="sub-title grey-text" >{{ project.start_date|localizeddate('medium', 'none', locale,"Europe/Berlin","d LLL, Y") }}</span>
         </a>
     {% endfor %}
 </ul>
