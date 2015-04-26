@@ -29,7 +29,7 @@ class Database {
 
     public function query($query) {
         $result = mysqli_query($this->link, $query);
-        if (!$result) die('Invalid query: ' . mysql_error());
+        if (!$result) die('Invalid query: ' . mysqli_error($this->link));
         return $result;
     }
 
